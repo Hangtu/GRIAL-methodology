@@ -1,5 +1,9 @@
 # 🏆 G.R.I.A.L. Methodology
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Methodology: GRIAL](https://img.shields.io/badge/Methodology-GRIAL-blue.svg)
+![Status: Open Source](https://img.shields.io/badge/Status-Open_Source-green.svg)
+
 **Grounding • Restrictions • Itinerary • Architecture • Launch**
 
 > **The first AI-Native Development Framework designed to prevent LLM hallucination and context drift.**
