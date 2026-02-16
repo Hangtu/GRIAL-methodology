@@ -1,0 +1,27 @@
+{
+  "project": "Project Name (Edit in roadmap.json)",
+  "version": "1.0.0",
+  "features": [
+    {
+      "id": "setup",
+      "name": "Project Initialization & Config",
+      "status": "done",
+      "priority": "critical",
+      "notes": "Next.js setup, Tailwind, Linting"
+    },
+    {
+      "id": "auth",
+      "name": "User Authentication",
+      "status": "in-progress",
+      "priority": "high",
+      "notes": "Login, Register, Session Management"
+    },
+    {
+      "id": "core-loop",
+      "name": "Core Value Proposition",
+      "status": "pending",
+      "priority": "critical",
+      "notes": "The main feature defined in Grounding"
+    }
+  ]
+}

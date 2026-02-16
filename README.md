@@ -2,57 +2,65 @@
 
 **Grounding • Restrictions • Itinerary • Architecture • Launch**
 
-> The first software methodology designed specifically for **AI-Assisted Programming (Vibe Coding)** and **High-Velocity Solo Developers**.
+> **The first AI-Native Development Framework designed to prevent LLM hallucination and context drift.**
+> _A strict protocol for High-Velocity Solo Developers, Vibe Coders, and Centaurs (Human + AI)._
 
 ## 🛑 The Problem
 
-Traditional methodologies (Scrum, Agile) manage _people_. They fail when your teammate is an AI that writes 100 lines per second but forgets the context in 10 minutes. This leads to:
+Traditional methodologies (Scrum, Agile, Kanban) were designed to manage _people_. They fail when your teammate is an AI that writes 100 lines of code per second but loses context every 10 minutes.
 
-- Infinite Feature Creep.
-- Spaghetti Code.
-- "Context Drift" (AI Hallucinations).
+In the era of **Vibe Coding**, the bottleneck is no longer writing syntax; it is maintaining **Context Integrity**. Without strict guardrails, AI development leads to:
+
+- **Scope Creep:** The AI suggests cool features that kill the MVP.
+- **Context Drift:** The AI forgets early architectural decisions.
+- **Spaghetti Code:** Circular dependencies created by short-term memory patches.
 
 ## 🛡️ The Solution: G.R.I.A.L.
 
-G.R.I.A.L. is a pre-code ritual and a strict documentation standard that acts as a "Guardrail" for Large Language Models (LLMs) like Claude 3.5 Sonnet or GPT-4o.
+G.R.I.A.L. is a pre-code ritual and a strict documentation standard that acts as a "Context Anchor" for Large Language Models (LLMs) like Claude 3.5 Sonnet, GPT-4o, or O1.
 
 ### The 5 Pillars
 
-#### 1. G - Grounding (Propósito)
+#### 1. G - Grounding (The North Star)
 
-One sentence that defines the _only_ problem the app solves. If a prompt doesn't serve this sentence, it is rejected.
+A single sentence that defines the _only_ problem the application solves. If an AI prompt does not serve this sentence, it is automatically rejected.
 
-#### 2. R - Restrictions (El Anti-Roadmap)
+#### 2. R - Restrictions (The Anti-Roadmap)
 
-A list of explicitly banned features. This creates a "Negative Constraint" that stops the AI from over-engineering.
+A list of explicitly **banned** features for the current version. This creates a "Negative Constraint" that physically stops the AI from over-engineering or adding unnecessary complexity.
 
-#### 3. I - Itinerary (Happy Path)
+#### 3. I - Itinerary (The Happy Path)
 
-A strictly linear user flow. No edge cases allowed in V1.
+A strictly linear user flow. We do not code for edge cases in the V1 phase. We code for the "Golden Path" to revenue/value.
 
-#### 4. A - Architecture (God Entity)
+#### 4. A - Architecture (The God Entity)
 
-Definition of the single most important database entity. The AI is forbidden from altering this schema once defined.
+Identification of the single most critical database entity. The AI is forbidden from altering the schema of this entity once defined, preventing data structure collapse.
 
 #### 5. L - Launch Criteria (Definition of Done)
 
-A binary condition for deployment. Stops the loop of eternal polishing.
-
-## 🔥 The Phoenix Protocol (Memory Management)
-
-To prevent AI hallucination:
-
-1. Complete one feature from the Roadmap.
-2. Commit & Push.
-3. **DELETE** the AI chat history.
-4. Start fresh instructing the AI to read the `GRIAL.md` file.
-
-## 🚀 Getting Started
-
-1. Copy `GRIAL_TEMPLATE.md` to your root folder.
-2. Spend 45 minutes filling it out.
-3. Point your AI (Cursor, Copilot, Windsurf) to read it before every session.
+A binary, verifiable condition for deployment. It stops the loop of eternal polishing.
 
 ---
 
-_Created by Hang Tu Wong Ley Franco. Open Source under MIT License._
+## 🔥 The Phoenix Protocol (Memory Management)
+
+To prevent AI hallucination, G.R.I.A.L. enforces the **Phoenix Protocol**:
+
+1.  **Feature Complete:** When a feature from `roadmap.json` turns "Green".
+2.  **Commit & Push:** Save the state.
+3.  **Burn the Chat:** Delete the current AI chat session history.
+4.  **Rebirth:** Start a fresh chat. The first prompt must always be: _"Read `ARCHITECTURE.md`. What is the next status in `roadmap.json`?"_
+
+---
+
+## 🚀 Getting Started
+
+1.  **Clone this repo** or copy the files to your project root.
+2.  **Rename** `ARCHITECTURE_TEMPLATE.md` to `ARCHITECTURE.md`.
+3.  **Fill it out:** Spend 45 minutes defining your constraints. This is the only "Slow Thinking" required.
+4.  **Vibe Code:** Point your AI (Cursor, Windsurf, Copilot) to the file and start building at light speed.
+
+## License
+
+MIT License. Free to use for personal and commercial projects.
