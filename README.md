@@ -37,6 +37,15 @@ A list of explicitly **banned** features for the current version. This creates a
 
 A strictly linear user flow. We do not code for edge cases in the V1 phase. We code for the "Golden Path" to revenue/value.
 
+```mermaid
+flowchart LR
+	Start((Start)) --> Signup[User signs up]
+	Signup --> CreateProject[Create project]
+	CreateProject --> FillArch[Fill ARCHITECTURE.md]
+	FillArch --> VibeCode[Vibe Code]
+	VibeCode --> Launch[Launch / Feature complete]
+```
+
 #### 4. A - Architecture (The God Entity)
 
 Identification of the single most critical database entity. The AI is forbidden from altering the schema of this entity once defined, preventing data structure collapse.
